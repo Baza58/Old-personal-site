@@ -1,0 +1,790 @@
+@import bourbon/bourbon
+
+$primary: hsla(9, 60%, 37%, 1)
+$accent: hsla(9, 60%, 67%, 1)
+$overlay: hsla(9, 60%, 67%, 0.9)
+$menu: hsla(9, 60%, 37%, 0.95)
+
+::selection
+    background-color: $accent
+
+.date
+    font-weight: 400
+
+body
+    margin: 0px
+    position: relative
+    font-family: roboto
+    
+
+a 
+    text-decoration: none
+    
+.prace-img
+    a
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+    
+.container
+    height: 100vh  
+    width: 100%
+    position: relative
+    background-image: url(../img/img.jpg)
+    background-size: cover
+    background-position: center center
+    
+    @include user-select ( none)
+    @include display( flex ) 
+    @include justify-content (center)
+    @include align-items (center)
+    @include flex-direction ( column)
+    
+    
+   
+.image-header
+    height: 100vh
+    width: 100%
+    position: absolute
+    top: 0
+    
+.background-footer
+    
+    width: 100%
+    
+h1, h2, h3, h4
+    margin: 0px
+    padding: 0px
+    
+.text
+    color: white
+    border: 3px solid white
+    padding: 10px 40px
+    z-index: 2
+    margin: 0 10px
+    
+    
+    h1
+        font-size: 3em
+        margin: 0px 0px 10px 0px
+        padding: 0px
+        text-align: center
+    h2
+        font-size: 1.5em
+        font-weight: 300
+        text-align: center
+        margin: 0px
+        padding: 0px
+        
+.content 
+    margin: 0px auto
+
+    max-width: 960px
+    width: 100%
+    line-height: 1.5
+    
+    @include display ( flex)
+    @include justify-content (center)
+    @include align-items (center)
+    @include flex-wrap (wrap)
+   
+    p
+        opacity: 0.7
+        font-weight: 300
+        
+
+        
+.profil-header
+    width: 100%
+    text-align: center
+    text-transform: uppercase
+    font-size: 1em
+    color: $primary
+    margin-bottom: 50px
+        
+section
+    width: 100%
+    padding: 70px 0px
+    
+    @media screen and ( max-width: 770px )
+        
+        padding: 40px 0px
+    
+.profil
+    position: relative
+    background-color: white
+    
+    
+.logo
+    height: 70px
+    width: 70px
+    opacity: 0.7
+    transition: all 0.25s
+    margin-left: 10px
+    z-index: 100
+    
+    
+    &:hover, &:active
+        opacity: 1
+        
+        @include transform ( scale(1.05,1.05) )
+header
+    position: absolute
+    top: 0px
+    left: 0px
+    height: 70px
+    @include display ( flex)    
+    @include justify-content (space-between)
+    width: 100%
+    z-index: 100 
+    opacity: 0.8
+    
+.content-container
+    margin: 0 15px
+
+.content-text-container
+    
+    width: 50%
+    margin-left: 50px
+
+    @media screen and (max-width: 630px)
+        
+        margin: 0 auto
+        margin-top: 30px
+        width: 80%
+        
+    
+.content-text
+   
+    padding: 0px
+    margin: 0px
+    font-size: 1.2em
+    text-align: center
+    line-height: 170%
+.headshot
+    width: 250px
+    height: auto
+
+span
+    font-weight: bold
+    
+
+.prace
+    background-color: #EEEEEE
+    
+.prace-content
+    max-width: 960px
+    margin: 0 auto
+    display: -webkit-flex
+   
+    @include display (flex)
+    @include justify-content ( center)
+    @include align-items ( center)
+    @include flex-direction ( row)
+    @include flex-wrap (wrap)
+    
+.prace-container
+    margin: 0 15px
+    
+.prace-img
+    width: 240px
+    height: auto
+    position: relative
+    
+    @include display ( flex)
+    @include justify-content ( center)
+    @include align-items ( center)
+    overflow: hidden
+    cursor: pointer
+    
+    &:hover, &:active
+        .overlay
+            top: 0
+    img
+        width: 100%
+        height: auto
+
+    @media screen and ( max-width: 510px )
+        
+        width: 50%
+        
+.overlay
+    width: 100%
+    height: 100%
+    background-color: $overlay
+    position: absolute
+    top: 100%
+    left: 0px
+    transition: all 0.25s
+    @include user-select (none)
+    @include display (flex )
+    @include justify-content ( center)
+    @include align-items ( center)
+    
+    h1
+        font-size: 1.5em
+        font-weight: 300
+        color: white
+    
+        @media screen and ( max-width: 330px )
+            
+            font-size: 1.3em
+        
+.overlay-show
+    top: 0 
+     
+.prace-content-img
+    margin: 50px 0 0px 0
+    display: none
+    max-width: 640px
+    transition: all 1s
+    h1
+        text-align: center
+        font-weight: normal
+        font-size: 1.4em
+    p
+        text-align: center
+        font-weight: 300
+        line-height: 1.5
+         
+    @media screen and ( max-width: 510px )
+        
+        margin: 30px 0 0px 0
+    
+    img
+        width: 100%
+
+.active-img
+
+    display: block
+
+.prace-content-container
+    
+    margin: 0 auto
+    max-width: 640px
+    
+.zivotopis-download
+    display: inline-block 
+    padding: 25px
+    font-size: 2.5em
+    font-weight: bold
+    color: $accent
+    text-decoration: none
+    text-align: center
+    border: 5px solid $accent
+    transition: all 0.25s
+    
+    &:hover, &:active
+        color: white
+        background-color: $accent
+        
+        @include transform (scale(1.05, 1.05) )
+    
+    @media screen and ( max-width: 500px )
+        padding: 15px
+        font-size: 2em
+        
+    @media screen and ( max-width: 370px )
+        padding: 10px
+        font-size: 1.7em
+
+.zivotopis-content
+    
+    max-width: 960px
+    margin: 0 auto
+    
+.zivotopis-container
+    
+    margin: 0 15px
+
+.zivotopis-download-container
+    
+    @include display ( flex)
+    @include justify-content ( center )
+    @include align-items ( center)
+    
+.kontakt-container
+    
+    margin: 0 15px
+    
+.kontakt-content
+    
+    margin: 0 auto
+    max-width: 960px
+    
+.kontakt
+    
+    background-color: #EEEEEE
+    
+.form-container
+    @include display ( flex)
+    @include justify-content ( center )
+    @include align-items ( center)
+    
+form
+    width: 550px
+    position: relative
+    
+    label
+        position: relative
+    
+    input, textarea
+        
+        width: 100%
+        border: 3px solid #eeeeee
+        border-bottom: 3px solid $accent
+        box-sizing: border-box
+        padding: 10px
+        font-size: 1em
+        background-color: #eeeeee
+        transition: all 0.25s
+             
+        &:focus
+            outline: none
+            border: 3px solid $accent
+            background-color: white
+        
+            + span
+                
+                @include transform ( translateY(-40px) )
+                opacity: 0
+                 
+        @media screen and ( max-width: 495px )
+            margin-bottom: 20px
+              
+    span
+        margin-bottom: 5px
+        margin-left: 10px
+        font-weight: 300
+        font-size: 1.2em
+        
+        @include transform ( translateY(5px) )
+        color: $primary
+        cursor: text
+        transition: all 0.25s
+        position: absolute
+        top: 0
+        left: 0
+        
+        @media screen and ( max-width: 495px )
+            
+            @include transform ( translateY(0px))
+        
+    .obsah
+           
+        position: absolute
+        top: 167px
+        left: 0
+        
+        @media screen and ( max-width: 495px )
+            top: 240px
+        
+.obs
+    position: static
+               
+.form-group
+    
+    .labelformspan
+        
+        display: block
+            
+    label
+        
+        width: 50%
+        position: relative
+        float: left
+        box-sizing: border-box
+        margin-bottom: 20px
+        &:nth-child(1)
+            padding-right: 5px
+        
+        &:nth-child(2)
+            padding-left: 5px
+        
+        @media screen and ( max-width: 495px )
+            float: none  
+            &:nth-child(1)
+                padding-right: 0px
+        
+            &:nth-child(2)
+                padding-left: 0px
+            
+textarea
+    
+    margin-top: 5px
+    margin-bottom: 20px
+    height: 140px
+    
+.submit
+    
+    width: 35%
+    float: right
+    background-color: $accent
+    color: white
+    font-family: "roboto"
+    font-size: 1.2em
+    transition: all 0.25s
+    cursor: pointer
+    margin-bottom: 0px
+    border: 3px solid $accent
+    
+    &:hover
+        background-color: white
+        color: $accent
+      
+footer
+    
+    background-image: url(../img/img.jpg)
+    background-size: cover
+    background-position: center center
+    position: relative
+ 
+.footer-container
+    
+    margin: 0 15px
+    padding: 30px 0
+   
+.footer-content
+    
+    @include display ( flex)
+    
+    @media screen and ( max-width: 850px )
+        display: block
+        
+.logo-footer
+    
+    width: 50px
+    height: 50px
+    margin-right: 10px
+    
+
+    #svg00
+        width: 50px
+        height: 50px
+        opacity: 0.7
+        transition: all 0.25s
+        #path00, #path01, #path02, #path03
+            fill: white
+         
+        &:hover, &:active
+            opacity: 1
+            
+            @include transform ( scale(1.05,1.05))
+
+.footer-menu
+    
+    a
+        color: white
+        text-decoration: none
+        font-size: 1.3em
+        line-height: 50px
+        padding: 0px 10px 0px
+        display: inline-block
+        text-align: center
+        font-weight: bold
+        opacity: 0.7
+        transition: all 0.25s
+        
+        &:hover, &:active
+            opacity: 1
+    
+    @media screen and ( max-width: 850px )
+        text-align: center
+    
+
+.footer-container-container
+    max-width: 960px
+    margin: 0 auto
+    
+    @include display ( flex)
+    @include justify-content ( space-between)
+    
+    @media screen and ( max-width: 850px )
+        display: block
+    
+.copyright
+    
+    width: 100%
+    text-align: center
+    color: white
+    margin-top: 30px
+    opacity: 0.5
+        
+.icons
+    svg
+        width: 50px
+        height: 50px
+        line-height: 70px
+        padding-left: 10px
+        padding-bottom: 10px
+        opacity: 0.7
+        transition: all 0.25s
+        text-decoration: none
+        
+        &:hover, &:active
+            opacity: 1
+            
+            @include transform (scale(1.05,1.05))
+        
+    @media screen and ( max-width: 850px )
+        text-align: center
+        margin-top: 20px
+           
+#svg0
+    height: 70px
+    width: 70px  
+    
+#svg1
+    #rect1
+        stroke: white
+        fill: none
+    
+    #path1
+        fill: white
+        
+    &:hover, &:active
+        #rect1
+            fill: #3b5998
+            stroke: #3b5998
+            
+        #path1
+            fill: white
+    
+#svg2
+    #rect2
+        fill: none
+        stroke: white
+    
+    #path2
+        fill: white
+    
+    &:hover, &:active
+        #rect2
+            stroke: #5ea9dd
+            fill: #5ea9dd
+        #path2
+            fill: #5ea9ddv
+        
+#svg3
+    #rect3
+        fill: none
+        stroke: white
+    
+    #path3, #path32
+        fill: white
+    &:hover, &:active
+        #rect3
+            stroke: #0274b3
+            fill: #0274b3
+        
+#svg4
+    #rect4
+        fill: none
+        stroke: white
+
+    #path41
+        stroke: white
+        fill: none
+    
+    #path42
+        stroke: white
+        fill: none
+    
+    #path43
+        stroke: none
+        fill: white
+    
+    #path44
+        stroke: none
+        fill: white
+    
+    &:hover, &:active
+        #rect4
+            fill: #dc0000
+            stroke: #dc0000
+    
+
+    
+    
+    
+    
+.menu
+    height: 100vh
+    position: fixed
+    width: 100%
+    background-color:  $menu
+    
+    z-index: 100
+    display: none
+
+    
+.hide
+    
+    height: 100vh
+    overflow: hidden
+    
+.menu-header
+    margin-bottom: 0px
+    a
+        display: block
+        color: white
+        text-decoration: none
+        font-size: 1.8em
+        font-weight: bold
+        opacity: 0.7
+        padding-bottom: 15px
+        transition: all 0.25s
+        text-align: center
+        
+        @media screen and ( max-width: 500px )
+
+            font-size: 1.6em
+            
+        &:hover, &:active
+            opacity: 1
+            
+
+.menu-content
+    @include display ( flex)
+    @include justify-content ( center )
+    @include align-items ( center)
+    @include flex-direction ( column)
+    margin: 0 auto 
+    max-width: 960px
+    height: 100vh
+    opacity: 1 !important
+    
+.icons-header
+    a
+        text-decoration: none
+    svg
+        width: 50px
+        height: 50px
+        opacity: 0.7
+        transition: all 0.25s
+        text-decoration: none
+        padding: 10px
+        &:hover, &:active
+            opacity: 1
+            
+            @include transform (scale(1.05,1.05))
+        
+.logo-footer-container
+    
+    @media screen and ( max-width: 850px )
+        text-align: center
+        
+.lang
+    opacity: 0.6
+    margin-top: 15px
+    transition: all 0.25s
+    
+    &:hover
+        opacity: 1
+     
+.menu-icon-container
+    height: 35px
+    width: 60px
+    position: absolute
+    top: 20px
+    right: 20px
+    opacity: 0.7
+    transition: all 0.25s
+    cursor: pointer
+    
+    z-index: 100000000
+    
+    @include display ( flex)
+    @include flex-direction ( column)
+    @include justify-content (space-between)
+    
+    &:hover
+        opacity: 1
+    
+    .menu-icon
+        height: 5px
+        width: 100%
+        background-color: white
+        border-radius: 7px
+        transition: all 0.25s
+        
+
+    
+.menu-div1-transform
+    
+    @include transform ( translateY(15px) rotate(40deg) )
+
+.menu-div2-transform
+    opacity: 0
+    
+.menu-div3-transform
+    
+    @include transform ( translateY(-15px) rotate(-40deg) )
+
+.arrow
+    width: 30px
+    display: block
+    height: 30px
+    
+.arrow-container, .arrow-container2
+    
+    display: block
+    width: 30px
+    height: 30px
+    
+.arrow-container2
+    
+    @include animation ( arrow-animation .5s infinite alternate)
+    
+.arrow1, .arrow2
+    width: 30px
+    height: 5px
+    background-color: white
+    position: absolute
+    top: 0  
+    
+.arrow1
+    
+    @include transform ( rotate(52deg))
+    
+    @include transform-origin ( top left)
+    
+.arrow2
+    
+    @include transform( rotate(-52deg) )
+    @include transform-origin(top right)
+    
+    
+.arrowcontainer
+    width: 30px
+    max-width: 30px
+    position: absolute
+    top: 85%
+    left: 0
+    right: 0
+    margin: 0 auto
+    
+.work-section-link
+    &:hover
+        text-decoration: underline !important
+    
+@include keyframes (arrow-animation)
+    0%
+        opacity: 0.4
+        @include transform ( scale(1,1))
+    100%
+        opacity: 1
+        @include transform ( scale(1.1,1.1))
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
