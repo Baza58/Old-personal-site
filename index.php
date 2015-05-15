@@ -122,7 +122,7 @@
                                 </label>
                             </div>
                             <label class="obs">   
-                                <textarea name="message" rows="8" required autocomplete="off"></textarea>
+                                <textarea name="message" rows="8" required autocomplete="off" class="input"></textarea>
                                 <span class="obsah">S čím vám mohu pomoci?</span>
                             </label>
                             <label>
