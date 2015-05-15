@@ -367,8 +367,7 @@ span {
 .prace-content-img {
   margin: 50px 0 0px 0;
   display: none;
-  max-width: 640px;
-  transition: all 1s; }
+  max-width: 640px; }
   .prace-content-img h1 {
     text-align: center;
     font-weight: normal;
@@ -382,9 +381,6 @@ span {
       margin: 30px 0 0px 0; } }
   .prace-content-img img {
     width: 100%; }
-
-.active-img {
-  display: block; }
 
 .prace-content-container {
   margin: 0 auto;
@@ -495,7 +491,8 @@ form {
     position: relative; }
   form input, form textarea {
     width: 100%;
-    border: 3px solid #eeeeee;
+    border: none;
+    border-top: 3px solid #eeeeee;
     border-bottom: 3px solid #dd8878;
     box-sizing: border-box;
     padding: 10px;
