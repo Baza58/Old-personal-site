@@ -108,9 +108,9 @@ h1, h2, h3, h4 {
   -o-transform: translateY(50px);
   transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
   max-width: 960px;
   width: 100%;
   line-height: 1.5;
@@ -247,9 +247,9 @@ span {
   -ms-transform: translateY(50px);
   -o-transform: translateY(50px);
   transform: translateY(50px);
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -442,9 +442,9 @@ span {
   -o-transform: translateY(50px);
   transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s; }
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s; }
 
 .zivotopis-container {
   margin: 0 15px; }
@@ -488,9 +488,9 @@ span {
   -o-transform: translateY(50px);
   transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s; }
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s; }
 
 .kontakt {
   background-color: #EEEEEE; }
