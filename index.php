@@ -62,7 +62,7 @@
                 <div class="content">
                     <h1 class="profil-header">O mně</h1>
                     <div class="headshot-comtainer" >
-                        <img class="headshot" src="assets/img/hs.svg" />
+                        <img class="headshot" src="assets/img/hs.svg" alt="Profilový obrázek"/>
                     </div>
                     <div class="content-text-container" >
                         <p class="content-text">
@@ -78,7 +78,7 @@
                 <div class="prace-content">
                     <h1 class="profil-header">Práce</h1>
                     <div class="prace-img">
-                        <img src="assets/img/sakura-crop.jpg">
+                        <img src="assets/img/sakura-crop.jpg" alt="Sakura Žatec stránky screenshot">
                         <div class="overlay overlay1"> 
                             <h1 class="overlay-text">Sakura Žatec</h1> 
                         </div>
@@ -90,7 +90,7 @@
                         <p>
                             Stránky věnované soukromému Karate-Do klubu Sakura Žatec. Stránky můžete navštívit na adrese <a href="http://sakurazatec.cz" class="work-section-link" target="_blank">sakurazatec.cz</a>
                         </p>
-                        <img src="assets/img/sakura-zatec-screenshot.png">
+                        <img src="assets/img/sakura-zatec-screenshot.png" alt="Sakura Žatec stránky screenshot">
                     </div> 
                 </div>
             </div>
