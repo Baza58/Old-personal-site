@@ -85,9 +85,9 @@ h1, h2, h3, h4 {
   padding: 10px 40px;
   z-index: 2;
   margin: 0 10px;
-  -webkit-animation: load-animation-logo 1s ease-in-out;
-  -moz-animation: load-animation-logo 1s ease-in-out;
-  animation: load-animation-logo 1s ease-in-out; }
+  -webkit-animation: load-animation-logo 0.7s ease-in-out;
+  -moz-animation: load-animation-logo 0.7s ease-in-out;
+  animation: load-animation-logo 0.7s ease-in-out; }
   .text h1 {
     font-size: 3em;
     margin: 0px 0px 10px 0px;
@@ -108,9 +108,9 @@ h1, h2, h3, h4 {
   -o-transform: translateY(50px);
   transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  transition: all 0.7s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
   max-width: 960px;
   width: 100%;
   line-height: 1.5;
@@ -247,9 +247,9 @@ span {
   -ms-transform: translateY(50px);
   -o-transform: translateY(50px);
   transform: translateY(50px);
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  transition: all 0.7s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -442,9 +442,9 @@ span {
   -o-transform: translateY(50px);
   transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  transition: all 0.7s; }
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .zivotopis-container {
   margin: 0 15px; }
@@ -488,9 +488,9 @@ span {
   -o-transform: translateY(50px);
   transform: translateY(50px);
   opacity: 0;
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  transition: all 0.7s; }
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .kontakt {
   background-color: #EEEEEE; }
