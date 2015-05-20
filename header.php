@@ -5,12 +5,12 @@
         <title>Petr Bažout | Front-end web developer</title>
         <meta name="description" content="Ahoj! Jmenuju se Petr Bažout a zajímám se o vývoj webu.</span> Mezi moje znalosti patří například HTML5, CSS3, JavaScript, jQuery, Wordpress. Pokud se zrovna nezabývám webem, tak s největší pravděpodobností sportuju nebo čtu."
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/style.min.css" rel="stylesheet">
         <meta name="author" content="Petr Bažout">
         <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet'                     type='text/css'>
-        <script src="assets/js/js.js" async></script>
+        <script src="assets/js/js.min.js" async></script>
         
 	</head>
 	<body>
