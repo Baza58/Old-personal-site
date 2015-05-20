@@ -84,7 +84,10 @@ h1, h2, h3, h4 {
   border: 3px solid white;
   padding: 10px 40px;
   z-index: 2;
-  margin: 0 10px; }
+  margin: 0 10px;
+  -webkit-animation: load-animation-logo 1s ease-in-out;
+  -moz-animation: load-animation-logo 1s ease-in-out;
+  animation: load-animation-logo 1s ease-in-out; }
   .text h1 {
     font-size: 3em;
     margin: 0px 0px 10px 0px;
@@ -859,6 +862,9 @@ footer {
   transition: all 0.25s;
   cursor: pointer;
   z-index: 100000000;
+  -webkit-animation: menu-animation 1s alternate infinite ease-in-out;
+  -moz-animation: menu-animation 1s alternate infinite ease-in-out;
+  animation: menu-animation 1s alternate infinite ease-in-out;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -993,6 +999,58 @@ footer {
     transform: scale(1, 1); }
   100% {
     opacity: 1;
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); } }
+@-webkit-keyframes load-animation-logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); } }
+@-moz-keyframes load-animation-logo {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0px); } }
+@keyframes load-animation-logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); } }
+@-webkit-keyframes menu-animation {
+  0% {
+    -webkit-transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(1.1, 1.1); } }
+@-moz-keyframes menu-animation {
+  0% {
+    -moz-transform: scale(1, 1); }
+  100% {
+    -moz-transform: scale(1.1, 1.1); } }
+@keyframes menu-animation {
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  100% {
     -webkit-transform: scale(1.1, 1.1);
     -moz-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);

@@ -36,7 +36,7 @@ a
     background-size: cover
     background-position: center center
     
-    @include user-select ( none)
+    +user-select ( none)
     @include display( flex ) 
     @include justify-content (center)
     @include align-items (center)
@@ -64,6 +64,7 @@ h1, h2, h3, h4
     padding: 10px 40px
     z-index: 2
     margin: 0 10px
+    +animation(load-animation-logo 1s ease-in-out )
     
     
     h1
@@ -256,7 +257,7 @@ span
     img
         width: 100%
 
-.active-img
+
 
     
 
@@ -696,6 +697,7 @@ footer
     cursor: pointer
     
     z-index: 100000000
+    +animation(menu-animation 1s alternate infinite ease-in-out)
     
     @include display ( flex)
     @include flex-direction ( column)
@@ -778,7 +780,20 @@ footer
     100%
         opacity: 1
         @include transform ( scale(1.1,1.1))
-
+        
++keyframes (load-animation-logo)
+    0%
+        opacity: 0
+        +transform(translateY(50px))
+    100%
+        opacity: 1
+        +transform(translateY(0px))
+        
++keyframes (menu-animation)
+    0%
+        +transform(scale(1,1))
+    100%
+        +transform(scale(1.1, 1.1))
 
 
 
