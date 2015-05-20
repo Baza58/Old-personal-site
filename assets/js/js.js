@@ -138,8 +138,24 @@ function menuLinks() {
     for (i = 0; i < links.length; i++) {
         
         links[i].addEventListener('click', function () {
-        $(".menu").slideToggle(250);
         body.classList.toggle('hide');
+        var height2 = parseInt(menu.style.height);
+            
+            
+            function updateHeig() {
+                height2 -= 45;
+                menu.style.height = height2 + 'px';
+                
+                if (height2 === 0) {
+                    menu.classList.remove('visible');
+                } else {
+                    requestAnimationFrame(updateHeig);
+                }
+            
+            
+            }
+            requestAnimationFrame(updateHeig);    
+        
     });
     }
     
