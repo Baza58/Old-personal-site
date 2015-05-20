@@ -626,9 +626,10 @@ footer
     position: fixed
     width: 100%
     background-color:  $menu
-    
+    overflow: hidden
     z-index: 100
     display: none
+    
 
     
 .hide
@@ -805,7 +806,7 @@ footer
         +transform(scale(1.1, 1.1))
 
 .animation
-    transform: translateY(0px)
+    +transform(translateY(0px))
     opacity: 1
 
 

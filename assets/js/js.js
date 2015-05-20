@@ -20,8 +20,47 @@ function menuToggle() {
         menuDiv2.classList.toggle('menu-div2-transform');
         menuDiv3.classList.toggle('menu-div3-transform');
         
-        $(".menu").slideToggle(250);
         body.classList.toggle('hide');
+        //
+        //$('.menu').slideToggle(250);
+        
+        if (menu.classList.contains('visible')) {
+            var height2 = parseInt(menu.style.height);
+            
+            
+            function updateHeig() {
+                height2 -= 45;
+                menu.style.height = height2 + 'px';
+                
+                if (height2 === 0) {
+                    menu.classList.remove('visible');
+                } else {
+                    requestAnimationFrame(updateHeig);
+                }
+            
+            
+            }
+            requestAnimationFrame(updateHeig);
+            
+            
+            
+        } else {
+            var height = 0;
+                function updateHeight() {
+                    height = height + 45;  
+                    menu.style.height = height + 'px';
+            
+                    if (height > window.innerHeight) {
+                        menu.classList.add('visible');
+                    } else {
+                        requestAnimationFrame(updateHeight);
+                    }
+            
+                }
+            menu.style.display = 'block';
+            requestAnimationFrame(updateHeight);
+        
+        }
         
     });
     
