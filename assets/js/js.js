@@ -29,7 +29,36 @@ function menuToggle() {
     
 };
     
-menuToggle();  
+menuToggle();
+    
+function pageAnimations() {
+    var scrollTop = window.scrollY;
+    var content = $('.content');
+    var contentOffs = content.offset().top;
+    var praceContent = $('.prace-content');
+    var praceOffs = praceContent.offset().top;
+    var zivotopis = $('.zivotopis-content');
+    var zivotopisOffs = zivotopis.offset().top;
+    var windowHeight = window.innerHeight;
+    var kontakt = $('.kontakt-content');
+    var kontaktOffs = kontakt.offset().top;
+    
+    if (scrollTop > (contentOffs - windowHeight + 50)) {
+        content.addClass('animation');
+    }
+    if(scrollTop > (praceOffs - windowHeight + 50)) {
+        praceContent.addClass('animation');
+    }
+    if (scrollTop > (zivotopisOffs - windowHeight + 50)) {
+        zivotopis.addClass('animation');
+    }
+    if (scrollTop > (kontaktOffs - windowHeight + 50)) {
+        kontakt.addClass('animation');
+    }
+    
+    requestAnimationFrame(pageAnimations);
+}
+window.requestAnimationFrame(pageAnimations);
 
 function linkAnimation() {
     
