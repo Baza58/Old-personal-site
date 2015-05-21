@@ -2,3 +2,5 @@
 *.css.map
 bourbon
 node_modules
+**/.sass-cache
+**/bourbon
