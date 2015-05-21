@@ -77,7 +77,7 @@
                 <div class="prace-content">
                     <h1 class="profil-header">Práce</h1>
                     <div class="prace-img">
-                        <img src="assets/img/sakura-crop.jpg" alt="Sakura Žatec stránky screenshot">
+                        <img src="assets/img/sakura-crop.jpg" srcset="assets/img/sakura-crop.jpg 1x, assets/img/sakura-crop2x.jpg 2x" alt="Sakura Žatec stránky screenshot">
                         <div class="overlay overlay1"> 
                             <h1 class="overlay-text">Sakura Žatec</h1> 
                         </div>
