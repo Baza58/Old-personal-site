@@ -90,7 +90,7 @@
                         <p>
                             Stránky věnované soukromému Karate-Do klubu Sakura Žatec. Stránky můžete navštívit na adrese <a href="http://sakurazatec.cz" class="work-section-link" target="_blank">sakurazatec.cz</a>
                         </p>
-                        <img src="assets/img/sakura-zatec-screenshot.png" alt="Sakura Žatec stránky screenshot">
+                        <img src="assets/img/sakura-zatec-screenshot.jpg" alt="Sakura Žatec stránky screenshot">
                     </div> 
                 </div>
             </div>
