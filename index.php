@@ -1,5 +1,4 @@
 <?php include 'header.php'; ?>
-<?php include_once("analyticstracking.php") ?>
         <div id="uvod"></div>
         <div class="body-container">
         <div class="menu">
