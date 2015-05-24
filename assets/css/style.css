@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "roboto";
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("Roboto-Light.ttf"); }
+@font-face {
+  font-family: "roboto";
+  font-weight: 400;
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "roboto";
+  font-weight: bold;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("Roboto-Bold.ttf"); }
 ::selection {
   background-color: #dd8878; }
 
@@ -7,7 +19,7 @@
 body {
   margin: 0px;
   position: relative;
-  font-family: roboto; }
+  font-family: "roboto"; }
 
 a {
   text-decoration: none; }
