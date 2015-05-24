@@ -6,12 +6,12 @@ $(function() {
     var body = document.getElementsByTagName('body')[0];  
     var menu = document.querySelector('.menu');
 
-
+    var menuContainer = document.querySelector('.menu-icon-container');
 
 
 function menuToggle() {
     
-    var menuContainer = document.querySelector('.menu-icon-container');
+    
     menuContainer.addEventListener('click', function() {
         
         
@@ -55,35 +55,40 @@ function menuToggle() {
 };
     
 menuToggle();
+  
+   
     
-function pageAnimations() {
-    var scrollTop = window.scrollY;
-    var content = $('.content');
-    var contentOffs = content.offset().top;
-    var praceContent = $('.prace-content');
-    var praceOffs = praceContent.offset().top;
-    var zivotopis = $('.zivotopis-content');
-    var zivotopisOffs = zivotopis.offset().top;
+    
+    var praceContent = document.querySelector('.prace-content');
+    var praceOffs = praceContent.getBoundingClientRect().top + pageYOffset;
+    var zivotopis = document.querySelector('.zivotopis-content');
+    var zivotopisOffs = zivotopis.getBoundingClientRect().top + pageYOffset;
     var windowHeight = window.innerHeight;
-    var kontakt = $('.kontakt-content');
-    var kontaktOffs = kontakt.offset().top;
+    var kontakt = document.querySelector('.kontakt-content');
+    var kontaktOffs = kontakt.getBoundingClientRect().top + pageYOffset;
+    var content = document.querySelector('.content');
+    var contOffset = document.querySelector('.content').getBoundingClientRect().top + pageYOffset;
     
-    if (scrollTop > (contentOffs - windowHeight + 50)) {
-        content.addClass('animation');
+    
+ function pageAnimations() {
+     var scrollTop = window.scrollY;
+    
+    if (scrollTop > (contOffset - windowHeight + 50)) {
+        content.classList.add('animation');
     }
     if(scrollTop > (praceOffs - windowHeight + 50)) {
-        praceContent.addClass('animation');
+        praceContent.classList.add('animation');
     }
     if (scrollTop > (zivotopisOffs - windowHeight + 50)) {
-        zivotopis.addClass('animation');
+        zivotopis.classList.add('animation');
     }
     if (scrollTop > (kontaktOffs - windowHeight + 50)) {
-        kontakt.addClass('animation');
+        kontakt.classList.add('animation');
     }
     
     requestAnimationFrame(pageAnimations);
 }
-window.requestAnimationFrame(pageAnimations);
+window.requestAnimationFrame(pageAnimations); 
 
 function linkAnimation() {
     

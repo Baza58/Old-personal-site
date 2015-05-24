@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-    var mozjpeg = require('imagemin-mozjpeg');
+
     
     grunt.initConfig({
         sass: {
@@ -39,27 +39,14 @@ module.exports = function(grunt) {
                 }
             }
         },
-        imagemin: {                          // Task 
-            static: {                          // Target 
-                options: {                       // Target options 
-                    optimizationLevel: 3,
-                    svgoPlugins: [{ removeViewBox: false }],
-                    use: [mozjpeg()]
-                    },
-                files: {                         // Dictionary of files 
-                    'assets/compress/*.png': 'assets/img/*.png', // 'destination': 'source' 
-                    'assets/compress/*.jpg': 'assets/img/*.jpg',
-                    'assets/compress/*.gif': 'assets/img/*.gif'
-      }
-    },
-        }
+        
     }); 
 
 grunt.loadNpmTasks('grunt-contrib-sass');    
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
-grunt.loadNpmTasks('grunt-contrib-imagemin');
+
 grunt.registerTask('default', ['sass', 'uglify', 'cssmin', 'watch']);
  
     

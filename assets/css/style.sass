@@ -87,7 +87,7 @@ h1, h2, h3, h4
     max-width: 960px
     width: 100%
     line-height: 1.5
-    
+    will-change: transform
     +display(flex)
     @include justify-content (center)
     @include align-items (center)
@@ -188,7 +188,7 @@ span
     @include align-items ( center)
     @include flex-direction ( row)
     @include flex-wrap (wrap)
-    
+    will-change: transform
 .prace-container
     margin: 0 15px
     
@@ -301,6 +301,7 @@ span
     +transform(translateY(50px))
     opacity: 0
     +transition(all 0.5s)
+    will-change: transform
     
 .zivotopis-container
     
@@ -323,7 +324,7 @@ span
     +transform(translateY(50px))
     opacity: 0
     +transition(all 0.5s)
-    
+    will-change: transform
 .kontakt
     
     background-color: #EEEEEE
@@ -722,7 +723,7 @@ footer
         background-color: white
         border-radius: 7px
         transition: all 0.25s
-        
+        will-change: transform
 
     
 .menu-div1-transform

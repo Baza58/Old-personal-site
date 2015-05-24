@@ -114,6 +114,7 @@ h1, h2, h3, h4 {
   max-width: 960px;
   width: 100%;
   line-height: 1.5;
+  will-change: transform;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -291,7 +292,8 @@ span {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  will-change: transform; }
 
 .prace-container {
   margin: 0 15px; }
@@ -444,7 +446,8 @@ span {
   opacity: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  will-change: transform; }
 
 .zivotopis-container {
   margin: 0 15px; }
@@ -490,7 +493,8 @@ span {
   opacity: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  will-change: transform; }
 
 .kontakt {
   background-color: #EEEEEE; }
@@ -934,7 +938,8 @@ footer {
     width: 100%;
     background-color: white;
     border-radius: 7px;
-    transition: all 0.25s; }
+    transition: all 0.25s;
+    will-change: transform; }
 
 .menu-div1-transform {
   -webkit-transform: translateY(15px) rotate(40deg);
